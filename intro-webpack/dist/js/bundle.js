@@ -1,0 +1,1 @@
+(()=>{"use strict";const o=/^\d+$/,e=function(e){return o.test(e)},s=/^[a-zA-Z]+$/,t=o=>s.test(o);var l;console.log(e("34")),console.log(e("3a")),console.log(t("3a")),console.log(t("abc")),console.log((l="Ab")!==l.toLowerCase()&&l!==l.toUpperCase())})();
