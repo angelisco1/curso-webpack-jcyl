@@ -1,6 +1,13 @@
 import './titulos.css';
 import './styles.scss';
 
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Titulo from './components/Titulo';
+
+ReactDOM.render(<Titulo />, document.getElementById('app'));
+
+
 
 // Un comentario
 
