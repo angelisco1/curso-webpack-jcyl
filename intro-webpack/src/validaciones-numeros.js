@@ -1,4 +1,6 @@
-const regexpNumeros = /^\d+$/
+import { regexpNumeros } from './regexps';
+// import MisRegexps from './regexps';
+
 
 function todoSonNumeros(texto) {
   return regexpNumeros.test(texto);

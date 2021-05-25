@@ -1,4 +1,4 @@
-const regexpTexto = /^[a-zA-Z]+$/;
+import { regexpTexto } from './regexps';
 
 const esSoloTexto = (texto) => {
   return regexpTexto.test(texto);
@@ -9,7 +9,11 @@ const contieneMayusYMinus = (texto) => {
 }
 
 
-// ES Modules
+// ES Modules (exportacion por defecto)
 // export default esSoloTexto;
+// CommonJS
+// module.exports = esSoloTexto
 
+
+// ES Modules
 export { esSoloTexto, contieneMayusYMinus };

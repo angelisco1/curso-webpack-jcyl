@@ -1,8 +1,11 @@
+// Esto es una variable de SASS
 $colorPrimary: gold;
 
 h1 {
   color: $colorPrimary;
   text-align: center;
+
+  // Aplica los estilos cuando pasamos el ratón por encima del h1
   &:hover {
     text-decoration: underline;
   }

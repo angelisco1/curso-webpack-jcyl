@@ -12,15 +12,29 @@ module.exports = {
   },
   module: {
     rules: [
+      // {
+      //   test: /\.(js|css|scss|sass)$/,  // Tiene que ejecutarse el primero (hay que ponerlo abajo del todo)
+      //   use: 'remove-comments-loader'
+      // },
       {
         test: /\.js$/,
         exclude: /node_modules/,
+        // use: ['babel-loader', 'remove-comments-loader']
         use: 'babel-loader'
       },
       {
         test: /\.(scss|sass)$/,
         use: ['style-loader', 'css-loader', 'sass-loader']
-      }
+        // use: ['style-loader', 'css-loader', 'sass-loader', 'remove-comments-loader']
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(js|css|scss|sass)$/,
+        use: 'remove-comments-loader'
+      },
     ]
   }
 }

@@ -1,19 +1,22 @@
 {
-  "name": "intro-webpack",
+  "name": "webpack-typescript",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "webpack": "webpack",
-    "build": "webpack --mode production",
-    "graph": "madge src/app.js"
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "madge": "^4.0.2",
+    "ts-loader": "^9.2.2",
+    "typescript": "^4.2.4",
     "webpack": "^5.37.1",
     "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
   }
 }

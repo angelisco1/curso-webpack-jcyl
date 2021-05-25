@@ -10,16 +10,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/app.js":
-/*!********************!*\
-  !*** ./src/app.js ***!
-  \********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.scss */ \"./src/styles.scss\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\nvar cfalco = {\n  nombre: 'Charles',\n  apellido: 'Falco',\n  telefonos: {\n    movil: {\n      prefijo: '+1',\n      numero: '699123123'\n    }\n  },\n  estaSuscrito: true\n};\nvar oblake = {\n  nombre: 'Octavia',\n  apellido: 'Blake',\n  telefonos: {\n    movil: {\n      prefijo: '+1',\n      numero: '666777888'\n    },\n    fijo: {\n      prefijo: '+1',\n      numero: '966777888'\n    }\n  }\n};\nvar usuarios = [cfalco, oblake];\n\nfunction getNumeroFijoPorUsuario(usuarios) {\n  return usuarios.map(function (usuario) {\n    var _usuario$telefonos, _usuario$telefonos$fi;\n\n    var nombreCompleto = \"\".concat(usuario.nombre, \" \").concat(usuario.apellido);\n    var numeroFijo = (_usuario$telefonos = usuario.telefonos) === null || _usuario$telefonos === void 0 ? void 0 : (_usuario$telefonos$fi = _usuario$telefonos.fijo) === null || _usuario$telefonos$fi === void 0 ? void 0 : _usuario$telefonos$fi.numero;\n    return _defineProperty({}, nombreCompleto, numeroFijo);\n  });\n}\n\nconsole.log(getNumeroFijoPorUsuario(usuarios));\n\nfunction getUsuariosSuscritos(usuarios) {\n  return usuarios.map(function (usuario) {\n    var _usuario$estaSuscrito;\n\n    var nombreCompleto = \"\".concat(usuario.nombre, \" \").concat(usuario.apellido);\n    return _defineProperty({}, nombreCompleto, (_usuario$estaSuscrito = usuario.estaSuscrito) !== null && _usuario$estaSuscrito !== void 0 ? _usuario$estaSuscrito : false);\n  });\n}\n\nconsole.log(getUsuariosSuscritos(usuarios));\n\n//# sourceURL=webpack://intro-webpack/./src/app.js?");
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles.scss":
 /*!******************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles.scss ***!
@@ -30,13 +20,33 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/titulos.css":
+/*!***************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/titulos.css ***!
+  \***************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"/* Cambia el tamaño de la letra */\\nh1 {\\n  font-size: 30px;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://intro-webpack/./src/titulos.css?./node_modules/css-loader/dist/cjs.js");
+
+/***/ }),
+
+/***/ "./src/app.js":
+/*!********************!*\
+  !*** ./src/app.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _titulos_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./titulos.css */ \"./src/titulos.css\");\n/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.scss */ \"./src/styles.scss\");\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\nvar cfalco = {\n  nombre: 'Charles',\n  apellido: 'Falco',\n  telefonos: {\n    movil: {\n      prefijo: '+1',\n      numero: '699123123'\n    }\n  },\n  estaSuscrito: true\n};\nvar oblake = {\n  nombre: 'Octavia',\n  apellido: 'Blake',\n  telefonos: {\n    movil: {\n      prefijo: '+1',\n      numero: '666777888'\n    },\n    fijo: {\n      prefijo: '+1',\n      numero: '966777888'\n    }\n  }\n};\nvar usuarios = [cfalco, oblake];\n\nfunction getNumeroFijoPorUsuario(usuarios) {\n  return usuarios.map(function (usuario) {\n    var _usuario$telefonos, _usuario$telefonos$fi;\n\n    var nombreCompleto = \"\".concat(usuario.nombre, \" \").concat(usuario.apellido);\n    var numeroFijo = (_usuario$telefonos = usuario.telefonos) === null || _usuario$telefonos === void 0 ? void 0 : (_usuario$telefonos$fi = _usuario$telefonos.fijo) === null || _usuario$telefonos$fi === void 0 ? void 0 : _usuario$telefonos$fi.numero;\n    return _defineProperty({}, nombreCompleto, numeroFijo);\n  });\n}\n\n\nconsole.log(getNumeroFijoPorUsuario(usuarios));\n\nfunction getUsuariosSuscritos(usuarios) {\n  return usuarios.map(function (usuario) {\n    var _usuario$estaSuscrito;\n\n    var nombreCompleto = \"\".concat(usuario.nombre, \" \").concat(usuario.apellido);\n    return _defineProperty({}, nombreCompleto, (_usuario$estaSuscrito = usuario.estaSuscrito) !== null && _usuario$estaSuscrito !== void 0 ? _usuario$estaSuscrito : false);\n  });\n}\n\n\nconsole.log(getUsuariosSuscritos(usuarios));\n\n//# sourceURL=webpack://intro-webpack/./src/app.js?");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/runtime/api.js":
 /*!*****************************************************!*\
   !*** ./node_modules/css-loader/dist/runtime/api.js ***!
   \*****************************************************/
 /***/ ((module) => {
 
-eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (cssWithMappingToString) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \" {\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join(\"\");\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery, dedupe) {\n    if (typeof modules === \"string\") {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, \"\"]];\n    }\n\n    var alreadyImportedModules = {};\n\n    if (dedupe) {\n      for (var i = 0; i < this.length; i++) {\n        // eslint-disable-next-line prefer-destructuring\n        var id = this[i][0];\n\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = [].concat(modules[_i]);\n\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        // eslint-disable-next-line no-continue\n        continue;\n      }\n\n      if (mediaQuery) {\n        if (!item[2]) {\n          item[2] = mediaQuery;\n        } else {\n          item[2] = \"\".concat(mediaQuery, \" and \").concat(item[2]);\n        }\n      }\n\n      list.push(item);\n    }\n  };\n\n  return list;\n};\n\n//# sourceURL=webpack://intro-webpack/./node_modules/css-loader/dist/runtime/api.js?");
+eval("\n\n\nmodule.exports = function (cssWithMappingToString) {\n  var list = [];\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \" {\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join(\"\");\n  };\n \n\n\n  list.i = function (modules, mediaQuery, dedupe) {\n    if (typeof modules === \"string\") {\n     \n      modules = [[null, modules, \"\"]];\n    }\n\n    var alreadyImportedModules = {};\n\n    if (dedupe) {\n      for (var i = 0; i < this.length; i++) {\n       \n        var id = this[i][0];\n\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = [].concat(modules[_i]);\n\n      if (dedupe && alreadyImportedModules[item[0]]) {\n       \n        continue;\n      }\n\n      if (mediaQuery) {\n        if (!item[2]) {\n          item[2] = mediaQuery;\n        } else {\n          item[2] = \"\".concat(mediaQuery, \" and \").concat(item[2]);\n        }\n      }\n\n      list.push(item);\n    }\n  };\n\n  return list;\n};\n\n//# sourceURL=webpack://intro-webpack/./node_modules/css-loader/dist/runtime/api.js?");
 
 /***/ }),
 
@@ -47,6 +57,16 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles.scss\");\n\n            \n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_styles_scss__WEBPACK_IMPORTED_MODULE_1__.default, options);\n\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_styles_scss__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});\n\n//# sourceURL=webpack://intro-webpack/./src/styles.scss?");
+
+/***/ }),
+
+/***/ "./src/titulos.css":
+/*!*************************!*\
+  !*** ./src/titulos.css ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_titulos_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js!./titulos.css */ \"./node_modules/css-loader/dist/cjs.js!./src/titulos.css\");\n\n            \n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_titulos_css__WEBPACK_IMPORTED_MODULE_1__.default, options);\n\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_titulos_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});\n\n//# sourceURL=webpack://intro-webpack/./src/titulos.css?");
 
 /***/ }),
 

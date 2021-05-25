@@ -1,4 +1,8 @@
+import './titulos.css';
 import './styles.scss';
+
+
+// Un comentario
 
 const cfalco = {
   nombre: 'Charles',
@@ -39,6 +43,7 @@ function getNumeroFijoPorUsuario(usuarios) {
   });
 }
 
+// Muestra los números de teléfono fijo de cada usuario
 console.log(getNumeroFijoPorUsuario(usuarios));
 
 function getUsuariosSuscritos(usuarios) {
@@ -50,4 +55,5 @@ function getUsuariosSuscritos(usuarios) {
   });
 }
 
+// Muestra el estado de las suscripciones de los usuarios
 console.log(getUsuariosSuscritos(usuarios));
