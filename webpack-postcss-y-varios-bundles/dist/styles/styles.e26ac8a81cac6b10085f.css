@@ -1,0 +1,16 @@
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#000000));
+  background: -o-linear-gradient(top, #ffffff, #000000);
+  background: linear-gradient(to bottom, #ffffff, #000000);
+}
+
+h1 {
+  color: #fff7d9;
+}
+
+h1:hover {
+  -webkit-transition: color 2s;
+  -o-transition: color 2s;
+  transition: color 2s;
+  color: #004b9a;
+}

@@ -1,0 +1,12 @@
+body {
+  background: linear-gradient(to bottom, white, black);
+}
+
+h1 {
+  color: yellow;
+}
+
+h1:hover {
+  transition: color 2s;
+  color: blue;
+}
