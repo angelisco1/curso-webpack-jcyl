@@ -1,0 +1,1 @@
+(self.webpackChunkwebpack_postcss_y_varios_bundles=self.webpackChunkwebpack_postcss_y_varios_bundles||[]).push([[293],{293:function(s,e,a){"use strict";a.r(e),a.d(e,{mostrarAlert:function(){return c}});const c=()=>alert("Me he cargado cuando me han llamado")}}]);

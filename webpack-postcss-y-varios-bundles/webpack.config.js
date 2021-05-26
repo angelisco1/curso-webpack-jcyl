@@ -1,13 +1,9 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
-const imageminMozjpeg = require('imagemin-mozjpeg');
 const { merge } = require('webpack-merge');
 const devConfig = require('./webpack.dev')
 const prodConfig = require('./webpack.prod')
-
 
 const entryPath = path.join(__dirname, 'src');
 const outputPath = path.join(__dirname, 'dist');
@@ -29,25 +25,25 @@ const configuracionComun = {
       }
     }),
     new CleanWebpackPlugin(),
-    new MiniCSSExtractPlugin({
-      filename: path.join('styles', 'styles.[contenthash].css')
-    }),
-    new ImageminPlugin({
-      test: /\.jpg$/,
-      plugins: [
-        imageminMozjpeg({
-          quality: 50
-        })
-      ]
-    })
+    // new MiniCSSExtractPlugin({
+    //   filename: path.join('styles', 'styles.[contenthash].css')
+    // }),
+    // new ImageminPlugin({
+    //   test: /\.jpg$/,
+    //   plugins: [
+    //     imageminMozjpeg({
+    //       quality: 50
+    //     })
+    //   ]
+    // })
   ],
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        // use: ['style-loader', 'css-loader', 'postcss-loader']
-        use: [MiniCSSExtractPlugin.loader, 'css-loader', 'postcss-loader']
-      },
+      // {
+      //   test: /\.css$/,
+      //   // use: ['style-loader', 'css-loader', 'postcss-loader']
+      //   use: [MiniCSSExtractPlugin.loader, 'css-loader', 'postcss-loader']
+      // },
       {
         test: /\.jpg$/,
         // type: 'asset/resource',
@@ -60,9 +56,6 @@ const configuracionComun = {
         }
       }
     ]
-  },
-  devServer: {
-    contentBase: outputPath
   }
 }
 
@@ -72,5 +65,9 @@ module.exports = (env) => {
   switch(env.mode) {
     case 'dev':
       return merge(configuracionComun, devConfig);
+    case 'prod':
+      return merge(configuracionComun, prodConfig);
+    default:
+      throw new Error('Este modo no está soportado');
   }
 }

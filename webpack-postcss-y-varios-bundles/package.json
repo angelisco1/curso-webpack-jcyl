@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack serve",
     "webpack": "webpack --env mode=dev",
-    "build": "webpack --mode production",
+    "build": "webpack --env mode=prod",
     "graph": "madge src/index.js"
   },
   "keywords": [],

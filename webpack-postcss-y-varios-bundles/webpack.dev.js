@@ -6,5 +6,16 @@ module.exports = {
     filename: '[name].js',
     assetModuleFilename: path.join('assets', '[name][ext]')
   },
-  watch: true
+  watch: true,
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader']
+      },
+    ]
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist')
+  }
 }
